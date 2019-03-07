@@ -7,12 +7,12 @@ class EventDetail extends Component {
     }
 
     Attendants(event) {
-        let list = []
+        let atten = []
         event.attendents.forEach(attendent => {
             console.log(attendent);
-            list.push(attendent+" ")
+            atten.push(attendent+" ")
         })
-        return list
+        return atten
     }
 
     render() {

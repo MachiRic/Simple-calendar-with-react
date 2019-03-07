@@ -8,10 +8,10 @@ class Calendar extends Component {
     }
 
     createTable(monthNr) {
-        let list =[]
+        let content =[]
         let firstDay = new Date(2019, monthNr);
         while (firstDay.getMonth() == monthNr) {
-             list.push(
+             content.push(
             <div key={firstDay.getDate()} className="calendar-item">
                 <h5>{firstDay.getDate()}</h5>
                 {
@@ -28,7 +28,7 @@ class Calendar extends Component {
             </div>)
             firstDay.setDate(firstDay.getDate() + 1)
         }
-        return list
+        return content
     }
 
 
