@@ -24,7 +24,7 @@ class EventDetail extends Component {
                     <h1>{event.title}</h1>
                     <h3>{event.date}</h3>
                     <p>{event.description}</p>
-                    <p>Attendents: {this.Attendants(event)}</p>
+                    <p>Attendants: {this.Attendants(event)}</p>
                 </div>);
                 return details
     }
